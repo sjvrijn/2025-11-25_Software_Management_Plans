@@ -38,26 +38,27 @@
           </section>
 
           <section> <!-- start of nested slides/column -->
-            <section data-state="black_overlay 7 yellow_flag logo" data-markdown data-background-image="./files/Research_Software.png">
+            <section data-state="black_overlay 4 yellow_flag logo" data-markdown data-background-image="./files/Research_Software.png">
               <textarea data-template>
                 # Why? What? How?
               </textarea>
             </section>
 
             <section data-state="black_overlay 7 yellow_flag logo" data-background-image="./files/Research_Software.png">
-              <div style="float: left; width: 49%; padding-top: 15%; padding-bottom: 15%; transform: translate(-10%);">
+              <h1>Why?</h1>
+              <div style="float: left; width: 49%; padding-top: 2%; padding-bottom: 15%; transform: translate(-10%);">
                 <h3>Research Software</h3>
               </div>
 
-              <div style="float: right; width: 49%; padding-top: 15%; padding-bottom: 15%; transform: translate(10%);">
+              <div style="float: right; width: 49%; padding-top: 2%; padding-bottom: 15%; transform: translate(10%);">
                 <h3>powers research</h3>
               </div>
 
-              <div style="float: left; width: 49%; padding-top: 15%; transform: translate(-10%);">
+              <div style="float: left; width: 49%; padding-top: 10%; transform: translate(-10%);">
                 <h3>across all</h3>
               </div>
 
-              <div style="float: right; width: 49%; padding-top: 15%; transform: translate(10%);">
+              <div style="float: right; width: 49%; padding-top: 10%; transform: translate(10%);">
                 <h3>domains!</h3>
               </div>
 
@@ -70,7 +71,7 @@
               </div>
             </section>
 
-            <section data-state="black_overlay 9 yellow_flag logo" data-background-image="./files/Research_Software.png">
+            <section data-state="black_overlay 8 yellow_flag logo" data-background-image="./files/Research_Software.png">
               <h2>Crucial, Yet Invisible</h2>
               <ul>
                 <li>UNESCO recommends FOSS for open science</li>
@@ -89,22 +90,43 @@
               </footer>
             </section>
 
-            <section data-state="black_overlay 9 yellow_flag logo" data-background-image="./files/Research_Software.png">
-              <h2>Reproducibility</h2>
-              <img style="height: 20vh;" src="./files/repro_1.png">
-              <img class="fragment" style="height: 20vh;" src="./files/repro_2.png">
+            <section data-state="black_overlay 8 yellow_flag logo" data-background-image="./files/Research_Software.png" data-auto-animate>
+              <h2 id="heading">Reproducibility and Replicability</h2>
+              <img id="repr" style="width: 50vw; transform: translate(-10px);" src="./files/repr_1.svg">
+            </section>
+
+            <section data-state="black_overlay 8 yellow_flag logo" data-background-image="./files/Research_Software.png" data-auto-animate data-auto-animate-duration="0">
+              <h2 id="heading">Reproducibility and Replicability</h2>
+              <img id="repr" style="width: 50vw; transform: translate(-10px);" src="./files/repr_2.svg">
+            </section>
+
+            <section data-state="black_overlay 8 yellow_flag logo" data-background-image="./files/Research_Software.png" data-auto-animate data-auto-animate-duration="0">
+              <h2 id="heading">Reproducibility and Replicability</span></h2>
+              <img id="repr" style="width: 50vw; transform: translate(-10px);" src="./files/repr_3.svg">
+            </section>
+
+            <section data-state="black_overlay 8 yellow_flag logo" data-background-image="./files/Research_Software.png" data-auto-animate data-auto-animate-duration="0">
+              <h2 id="heading">Reproducibility and Replicability</h2>
+              <img id="repr" style="width: 50vw; transform: translate(-10px);" src="./files/repr_4.svg">
+            </section>
+
+            <section data-state="black_overlay 8 yellow_flag logo" data-background-image="./files/Research_Software.png" data-auto-animate data-auto-animate-duration="0">
+              <h2 id="heading">Reproducibility and Replicability</h2>
+              <img id="repr" style="width: 50vw; transform: translate(-10px);" src="./files/repr_5.svg">
             </section>
 
             <section data-state="black_overlay yellow_flag logo" data-background-image="./files/tailor.jpg" data-markdown>
               <textarea data-template>
+              # What?
               ## SMP Content
 
-              - should be tailored
-              - can evolve, it's a living document
+              - should be tailored, and
+              - can evolve, it's a living document.
               </textarea>
             </section>
 
             <section data-state="black_overlay yellow_flag logo" data-background-image="./files/tools.jpg">
+              <h1>How?<h1>
               <h2>SMP Tool</h2>
               <a href="https://smp.research.software">smp.research.software</a>
             </section>
@@ -141,6 +163,51 @@
                 Follow along and fill in your own, at<br>
                 <a href="https://smp.research.software">smp.research.software</a>!
                 </div>
+
+                Note:
+                ### SMP tool example answers
+                - Name & Purpose
+                    - Spine-Toolbox
+                    - Spine Toolbox is an open source Python package to manage data, scenarios and workflows for modelling and simulation. You can have your local workflow, but work as a team through version control and SQL databases.
+                - Scope
+                    - yes, yes, yes, yes
+                - Authors
+                    - Juha Kiviluoma
+                      juha@email.com
+                - Ownership
+                    - Mopo Project - https://www.tools-for-energy-system-modelling.org
+                - Context
+                    - Call: HORIZON-CL5-2022-D3-01
+                      Proposal number: 101095998
+                - Citation
+                    - Attribution text in README.md file
+                      We should consider having a CITATION.cff file
+                - Versioning
+                    - SemVer
+                    - Git
+                    - Public repo on GitHub: https://github.com/spine-tools/Spine-Toolbox
+                - License
+                    - GPL 3.0
+                - Documentation
+                    - User documentation: https://spine-toolbox.readthedocs.io/en/latest/
+                    - There's a brief section in README.md for devs and a more extensive "developer documentation" and "contributing guide" in the user documentation (see above).
+                      We could have better developer documentation in *one* place.
+                    - Installation instructions in README.md. Could be more detailed.
+                - Maintenance
+                    - The VTT Technical Research Centre of Finland maintains the software in the long run, we should document this somewhere.
+                - Sustainability
+                    - We will apply for additional rounds of funding to ensure further development. In the meantime, commercial partners use and work on the project as well.
+                - Support
+                    - We support users via email and GitHub issues. During the project we allocate time for dissemination and workshops. After the project ends, this will continue on a best-effort basis.
+                - Quality
+                    - We don't have one yet.
+                    - We use pytest and have GitHub runners test the whole software suite whenever we push code. All tests are in the `/tests` folder.
+                - Packaging
+                    - Releases are automatically packaged and published at https://pypi.org/project/spinetoolbox/ and can be pip-installed.
+                - Risk Analysis
+                    - We don't use sensitive data ourselves. Security risks can be communicated via email or GitHub issues. We have no policy around using LLM generated code.
+                - Data Management Plan
+                    - We have no data of our own and thus no DMP.
               </textarea>
             </section>
           </section> <!-- end of nested slides/column -->
